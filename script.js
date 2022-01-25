@@ -24,11 +24,11 @@ document.getElementById('rollDice').addEventListener('click', function() {
     diceScore = Math.trunc(Math.random() * 6 + 1);
     roundScore[activePlayer] = parseInt(document.getElementById('roundScore' + numberPlayer[activePlayer]).textContent, 10);
     if(diceScore != 1) {
-      document.getElementById('sixSidedDice').src = '/images/' + diceScore + '.png';
+      document.getElementById('sixSidedDice').src = 'images/' + diceScore + '.png';
       roundScore[activePlayer] += diceScore;
       document.getElementById('roundScore' + numberPlayer[activePlayer]).textContent = roundScore[activePlayer];
     } else {
-      document.getElementById('sixSidedDice').src = '/images/' + diceScore + '.png';
+      document.getElementById('sixSidedDice').src = 'images/' + diceScore + '.png';
       document.getElementById('roundScore' + numberPlayer[activePlayer]).textContent = roundScore[activePlayer];
       changePlayer();
       alert('LOSER ! Next Player...');
