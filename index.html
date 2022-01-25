@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Dice Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1 class="text-center">ULTIMATE DICE GAME</h1>
+  </header>
+
+  <div class="background">
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <button class="btn" id="newGame">
+          <i class="fa-solid fa-plus animated bounce"> NEW GAME</i>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4 text-center">
+        <p id="player1">PLAYER 1</p>
+        <p id="globalScore1">0</p>
+      </div>
+      <div class="col-4 text-center">
+        <img src="/images/faces/1.png" alt="dice" id="sixSidedDice">
+      </div>
+      <div class="col-4 text-center">
+        <p id="player2">PLAYER 2</p>
+        <p id="globalScore2">0</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4 text-center">
+        <p>Current</p>
+        <p id="roundScore1">0</p>
+      </div>
+      <div class="col d-flex align-items-center justify-content-center flex-column">
+        <button class="btn" id="rollDice">
+          <i class="fa-solid fa-arrow-rotate-left"> ROLL DICE</i>
+        </button>
+        <button class="btn" id="holdDice">
+          <i class="far fa-caret-square-down"> HOLD</i>        
+        </button>
+      </div>
+      <div class="col-4 text-center">
+        <p>Current</p>
+        <p id="roundScore2">0</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
