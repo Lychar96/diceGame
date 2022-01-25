@@ -11,11 +11,11 @@ function newGame() {
   diceScore = 0;
   roundScore = [0, 0];
   globalScore = [0, 0];
-document.getElementById('roundScore1').textContent = 0;
-document.getElementById('roundScore2').textContent = 0;
-document.getElementById('globalScore1').textContent = 0;
-document.getElementById('globalScore2').textContent = 0;
-alert("LET'S GO !");
+  document.getElementById('roundScore1').textContent = 0;
+  document.getElementById('roundScore2').textContent = 0;
+  document.getElementById('globalScore1').textContent = 0;
+  document.getElementById('globalScore2').textContent = 0;
+  alert("LET'S GO !");
 }
 
     // Lancer le dé (rollDice) //
